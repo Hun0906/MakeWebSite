@@ -1,15 +1,16 @@
 @charset "UTF-8";
-*{
-	padding : 0;
-	margin : 0;
-	
-}
-body{
-	background-color: #333;
-	color: white;
+
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.container{
+body {
+	background-color: white;
+	color: black;
+}
+
+.container {
 	max-width: 800px;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -20,65 +21,81 @@ body{
 	align-items: center;
 }
 
-header{
-	display: flex;
+header {
+	background-image: url(./Image/Color.jpg);
+	background-size: cover; 
+	display : flex;
 	justify-content: space-between;
 	width: 100%;
 	align-items: center;
-	padding:1.2rem 0;
-	border-bottom: 10px solid white;
-}
-header>p{
-	font-size:1.5rem;
-	font-weight: 700;
-	
+	padding: 1.2rem 0;
+	border-bottom: 10px solid gray;
+	display: flex;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-header>ul{
-	display:flex;
+header>hl {
+	font-size: 1.5rem;
+	font-weight:700;
+	background-color:gray;
 }
-header>ul>li{
-	list-style-type:none;
-	margin-left:1.5rem;
+
+header>p {
+	font-size: 1.5rem;
+	font-weight: 700;
 }
-header>ul>li>a{
-	text-decoration:none;
-	font-size:1.2rem;
-	font-weight:800;
-	padding-bottom:5px;
+
+header>ul {
+	display: flex;
+}
+
+header>ul>li {
+	list-style-type: none;
+	margin-left: 1.5rem;
+}
+
+header>ul>li>a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 800;
+	padding-bottom: 5px;
 	color: white;
+	background-color: gray;
 }
-header>ul>li:first-child>a{
-	border-bottom: 5px solid black;
+
+header>ul>li>a:hover {
+	border-bottom: 5px solid red;
 }
-header>ul>li>a:hover{
-	border-bottom: 5px solid gray;
-}
-@media screen and(max-width:600px){
-	header{
-	flex-direction: column;
+
+@media screen and(max-width:600px) {
+	header {
+		flex-direction: column;
 	}
 }
 
-section{
-	padding:0 3rem;
-	text-align:center;
+section {
+	padding: 0 3rem;
+	text-align: center;
 }
-section>p{
+
+section>p {
 	margin-bottom: 1rem;
 }
-section>p:first-child{
+
+section>p:first-child {
 	font-size: 2rem;
 	font-weight: 900;
 }
-section>p:last-of-type{
+
+section>p:last-of-type {
 	font-size: 1.3rem;
 	font-weight: 500;
 }
 
-section>a{
+section>a {
 	display: block;
-	border: 1px solid black;
+	border: 1px solid white;
 	width: 150px;
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -86,16 +103,17 @@ section>a{
 	padding: 1rem;
 	border-radius: 10px;
 	text-decoration: none;
-	background-color: white;
-	color: black;
+	background-color: gray;
+	color: white;
 }
 
-footer{
+footer {
 	margin-bottom: 2rem;
 	font-size: 1.1rem;
-	color:gray;
+	color: blue;
 }
-footer>a{
+
+footer>a {
 	text-decoration: none;
-	color: white;
+	color: green;
 }
